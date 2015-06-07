@@ -1,0 +1,3 @@
+[submodule "L1TEmulatorWrapper"]
+	path = L1TEmulatorWrapper
+	url = https://github.com/jbsauvan/L1TEmulatorWrapper.git
