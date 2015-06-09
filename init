@@ -24,8 +24,10 @@ scram b -j4
 
 ##  Compile the emulator wrapper
 cd ../../L1TEmulatorWrapper 
+git checkout test-eg-firmware-CMSSW_7_3_0_pre1
 make
 source wrapenv
+cd ..
 
 
 
