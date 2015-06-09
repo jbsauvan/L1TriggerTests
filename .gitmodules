@@ -1,3 +1,4 @@
 [submodule "L1TEmulatorWrapper"]
 	path = L1TEmulatorWrapper
 	url = https://github.com/jbsauvan/L1TEmulatorWrapper.git
+	branch = test-eg-firmware-CMSSW_7_3_0_pre1
