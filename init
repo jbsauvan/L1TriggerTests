@@ -50,5 +50,23 @@ source wrapenv
 cd ..
 
 
+## Compile the AnHiMa analyses
+echo
+echo "#####################"
+echo "Compiling performance analyses"
+echo "#####################"
+echo
+cd L1Trigger-AnalysisHistoMaker 
+ANALYSES=`ls -l | egrep '^d' | awk '{print $9}'
+for ANALYSIS in $ANALYSES
+do
+	cd ${ANALYSIS}
+	if [ -e Makefile ]
+	then
+		make -j4
+	fi
+	cd -
+done
+
 
 
