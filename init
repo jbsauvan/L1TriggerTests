@@ -7,10 +7,11 @@ export $SCRAM_ARCH=slc6_amd64_gcc491
 scram project -n CMSSW CMSSW CMSSW_7_3_0_pre1
 cd CMSSW/src
 cmsenv
-cd -
 
 ## Retrieve the test version of the emulator
 git cms-merge-topic --unsafe tstreble:${CMSSW_VERSION}_Thomas
+
+cd -
 
 ## Retrieve the submodules
 git checkout CMSSW/src
