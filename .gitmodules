@@ -2,3 +2,6 @@
 	path = L1TEmulatorWrapper
 	url = https://github.com/jbsauvan/L1TEmulatorWrapper.git
 	branch = test-eg-firmware-CMSSW_7_3_0_pre1
+[submodule "CMSSW/src/Ntuplizer/L1TriggerNtuplizer"]
+	path = CMSSW/src/Ntuplizer/L1TriggerNtuplizer
+	url = https://github.com/jbsauvan/Ntuplizer-L1TriggerNtuplizer
