@@ -9,22 +9,42 @@ cd CMSSW/src
 cmsenv
 
 ## Retrieve the test version of the emulator
+echo
+echo "#####################"
+echo "Retrieving emulator"
+echo "#####################"
+echo
 git cms-merge-topic --unsafe tstreble:${CMSSW_VERSION}_Thomas
 
 cd -
 
 ## Retrieve the submodules
+echo
+echo "#####################"
+echo "Retrieving submodules"
+echo "#####################"
+echo
 git checkout CMSSW/src
 git submodule init
-git submodule update
+#git submodule update
+git submodule update --remote
 
 ## Compile CMSSW
+echo
+echo "#####################"
+echo "Compiling CMSSW"
+echo "#####################"
+echo
 cd CMSSW/src/
 scram b -j4
 
 ##  Compile the emulator wrapper
+echo
+echo "#####################"
+echo "Compiling the emulator wrapper"
+echo "#####################"
+echo
 cd ../../L1TEmulatorWrapper 
-git checkout test-eg-firmware-CMSSW_7_3_0_pre1
 make
 source wrapenv
 cd ..
