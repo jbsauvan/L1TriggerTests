@@ -5,3 +5,7 @@
 [submodule "CMSSW/src/Ntuplizer/L1TriggerNtuplizer"]
 	path = CMSSW/src/Ntuplizer/L1TriggerNtuplizer
 	url = https://github.com/jbsauvan/Ntuplizer-L1TriggerNtuplizer
+[submodule "L1Trigger-AnalysisHistoMaker"]
+	path = L1Trigger-AnalysisHistoMaker
+	url = https://github.com/jbsauvan/L1Trigger-AnalysisHistoMaker
+	branch = test-eg-firmware-CMSSW_7_3_0_pre1
