@@ -4,7 +4,7 @@
 rm -rf CMSSW/src
 source /cvmfs/cms.cern.ch/cmsset_default.sh
 export $SCRAM_ARCH=slc6_amd64_gcc491
-scram project -n CMSSW CMSSW CMSSW_7_3_0_pre1
+scram project -n CMSSW CMSSW CMSSW_7_5_0_pre1
 cd CMSSW/src
 cmsenv
 
@@ -14,7 +14,7 @@ echo "#####################"
 echo "Retrieving emulator"
 echo "#####################"
 echo
-git cms-merge-topic --unsafe tstreble:${CMSSW_VERSION}_Thomas
+git cms-merge-topic --unsafe jbsauvan:jbsauvan-l1t-devel-${CMSSW_VERSION}
 
 cd -
 
@@ -57,7 +57,7 @@ echo "Compiling performance analyses"
 echo "#####################"
 echo
 cd L1Trigger-AnalysisHistoMaker 
-ANALYSES=`ls -l | egrep '^d' | awk '{print $9}'
+ANALYSES=`ls -l | egrep '^d' | awk '{print $9}'`
 for ANALYSIS in $ANALYSES
 do
 	cd ${ANALYSIS}
