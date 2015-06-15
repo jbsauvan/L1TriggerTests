@@ -1,0 +1,6 @@
+#! /usr/bin/env bash
+
+cd CMSSW/src
+cmsenv
+cd ../..
+source L1TEmulatorWrapper/wrapenv
