@@ -2,5 +2,6 @@
 
 cd CMSSW/src
 cmsenv
-cd ../..
-source L1TEmulatorWrapper/wrapenv
+cd ../../L1TEmulatorWrapper
+source wrapenv
+cd ..
