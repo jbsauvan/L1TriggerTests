@@ -5,3 +5,6 @@ cmsenv
 cd ../../L1TEmulatorWrapper
 source wrapenv
 cd ..
+cd L1Trigger-AnalysisHistoMaker
+source setupenv
+cd ..
