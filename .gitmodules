@@ -2,9 +2,6 @@
 	path = L1TEmulatorWrapper
 	url = https://github.com/jbsauvan/L1TEmulatorWrapper.git
 	branch = jbsauvan-l1t-devel-CMSSW_7_5_0_pre1
-[submodule "CMSSW/src/Ntuplizer/L1TriggerNtuplizer"]
-	path = CMSSW/src/Ntuplizer/L1TriggerNtuplizer
-	url = https://github.com/jbsauvan/Ntuplizer-L1TriggerNtuplizer
 [submodule "L1Trigger-AnalysisHistoMaker"]
 	path = L1Trigger-AnalysisHistoMaker
 	url = https://github.com/jbsauvan/L1Trigger-AnalysisHistoMaker
