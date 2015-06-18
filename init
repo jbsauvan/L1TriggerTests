@@ -1,7 +1,6 @@
 #! /usr/bin/env bash
 
 ## Initialize CMSSW
-rm -rf CMSSW/src
 source /cvmfs/cms.cern.ch/cmsset_default.sh
 export SCRAM_ARCH=slc6_amd64_gcc491
 scram project -n CMSSW CMSSW CMSSW_7_5_0_pre1
@@ -24,7 +23,6 @@ echo "#####################"
 echo "Retrieving submodules"
 echo "#####################"
 echo
-git checkout CMSSW/src
 git submodule init
 #git submodule update
 git submodule update --remote
