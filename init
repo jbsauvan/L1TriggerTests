@@ -13,7 +13,7 @@ echo "#####################"
 echo "Retrieving emulator"
 echo "#####################"
 echo
-git cms-merge-topic --unsafe jbsauvan:jbsauvan-l1t-devel-${CMSSW_VERSION}
+git cms-merge-topic --unsafe jbsauvan:reduced-egamma-clustering
 
 cd -
 
